@@ -1,0 +1,20 @@
+/* Set background color of the body */
+body {
+    background-color: #cedecd;
+  }
+  
+  /* Set background color and text color of the login button */
+  .btn-primary {
+    background-color: #63997a;
+    border-color: #63997a;
+  }
+  .btn-primary:hover {
+    background-color: #407866;
+    border-color: #407866;
+  }
+  
+  /* Set text color of the card title */
+  .card-title {
+    color: #333;
+  }
+  
