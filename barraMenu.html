@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="barra.css">
+    </head>
+    <body>
+        <div class="navBar">
+            <nav>
+                <a href="#" class="logo"> 
+                    <h2 class="Nombre">Reciplas</h2>
+                </a>
+                <img src="iconprofile.png" class="perfil" onclick="toggleMenu()">
+                <div class="sub-menu" id="subMenu">
+                    <div class="items">
+                        <div class="user-info">
+                            <img src="profile.png">
+                            <p>Perfil</p>
+                        </div>
+                        <hr>
+                            <a href="#" class="sub-menu-link">
+                                <img src="setting.png">
+                                <p>Ajustes</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="logout.png">
+                                <p>Cerrar Sesión</p>
+                                <span>></span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu")
+            }
+        </script>
+    </body>
+</html>
