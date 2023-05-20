@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="nuevoCliente.css">
+    </head>
+    <body>
+        <div class="navBar">
+            <nav>
+                <a href="#" class="logo"> 
+                    <h2 class="Nombre">Reciplas</h2>
+                </a>
+                <ul>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Ventas</a></li>
+                    <li><a href="#">Reportes</a></li>
+                </ul>
+                <img src="./externalSources/iconprofile.png" class="perfil" onclick="toggleMenu()">
+                <div class="sub-menu" id="subMenu">
+                    <div class="items">
+                        <div class="user-info">
+                            <img src="./externalSources/profile.png">
+                            <p>Perfil</p>
+                        </div>
+                        <hr>
+                            <a href="#" class="sub-menu-link">
+                                <img src="./externalSources/setting.png">
+                                <p>Ajustes</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="./externalSources/logout.png">
+                                <p>Cerrar Sesión</p>
+                                <span>></span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu")
+            }
+        </script>
+        <div class="formulario">
+            <div class="container">
+                <div class="title">Nuevo Cliente</div>
+                <div class="subtitle">
+                    <h5>Se le asignará un número de cliente</h5>
+                </div>
+                <form action="#">
+                    <div class="detalle-cliente">
+                        <div class="input-box">
+                            <span class="detalle">ID Cliente</span>
+                            <input type="text" placeholder="ID del cliente" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Nombre y Apellido</span>
+                            <input type="text" placeholder="Nombre de Cliente" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Tipo de Cliente</span>
+                                <div class="tipoC">
+                                    <input type="radio" name="tipo" id="TipoE">
+                                    <label for="TipoE"><span class="radio-button"></span>Empresa</label>
+                                </div>
+                                <div class="tipoC">
+                                    <input type="radio" name="tipo" id="TipoP">
+                                    <label for="TipoP"><span class="radio-button"></span>Particular</label>
+                                </div>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Email</span>
+                            <input type="text" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Teléfono</span>
+                            <input type="tel" placeholder="+54-901-123456 " required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Seleccionar Fecha</span>
+                            <input type="date" placeholder="Seleccionar Fecha" required>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Registrar Cliente">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
