@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="agregarPedido.css">
+    </head>
+    <body>
+        <div class="navBar">
+            <nav>
+                <a href="#" class="logo"> 
+                    <h2 class="Nombre">Reciplas</h2>
+                </a>
+                <ul>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Ventas</a></li>
+                    <li><a href="#">Reportes</a></li>
+                </ul>
+                <img src="./externalSources/iconprofile.png" class="perfil" onclick="toggleMenu()">
+                <div class="sub-menu" id="subMenu">
+                    <div class="items">
+                        <div class="user-info">
+                            <img src="./externalSources/profile.png">
+                            <p>Perfil</p>
+                        </div>
+                        <hr>
+                            <a href="#" class="sub-menu-link">
+                                <img src="./externalSources/setting.png">
+                                <p>Ajustes</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="./externalSources/logout.png">
+                                <p>Cerrar Sesión</p>
+                                <span>></span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu")
+            }
+        </script>
+        <div class="formulario">
+            <div class="container">
+                <div class="title">Editar Pedido</div>
+                <form action="#">
+                    <div class="detalle-pedido">
+                        <div class="input-box">
+                            <span class="detalle">Número Pedido</span>
+                            <input type="text" placeholder="Número del pedido" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">ID Cliente</span>
+                            <input type="text" placeholder="ID del cliente" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Sillas</span>
+                            <input type="number" placeholder="0">
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Mesas</span>
+                            <input type="number" placeholder="0">
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Cajas</span>
+                            <input type="number" placeholder="0">
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Estantes</span>
+                            <input type="number" placeholder="0">
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Cuadernos</span>
+                            <input type="number" placeholder="0">
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Protectores</span>
+                            <input type="number" placeholder="0">
+                        </div>
+                        
+                            <div class="boton">
+                                <div class="button1">
+                                    <input type="button" value="Agregar otro producto">
+                                </div>
+                                <div class="input-box">
+                                    <span class="detalle">Seleccionar Fecha</span>
+                                    <input type="date" placeholder="Seleccionar Fecha" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="detalle">Monto Total</span>
+                                    <input type="currency" placeholder="$0,0" required>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <input type="submit" value="Registrar Pedido">
+                            </div>
+                        
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </body>
+</html>
