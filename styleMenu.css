@@ -72,3 +72,115 @@ div.card .contenido a:hover{
     color: #ffff;
 }
 
+.contenido button{
+    margin-bottom: 20px;
+    background-color: #e7eee6;
+    color: #1B8D73;
+    border: 2px solid #1B8D73;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 400ms ease;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.contenido button:hover{
+    background: #1B8D73;
+    color: #ffff;
+}
+
+.modal{
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 370px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    margin-top: 20px;
+}
+
+.modal-header h4{
+    background-color: #ffff;
+}
+
+.close{
+    position: absolute;
+    background-color: #ffff;
+    font-weight: 600;
+    font-size: 20px;
+    right: 5px;
+    top: 5px;
+    margin-right: 5px;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.modal-content{
+    margin-top: 35px;
+    background: #ffff;
+    border-radius: 5px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.modal-content h3{
+    background-color: #ffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+}
+
+.modal-content a{
+    text-decoration: none;
+    display: inline-block;
+    padding: -10px;
+    background-color: #ffff;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1B8D73;
+    border: 2px solid #1B8D73;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.modal-content a:hover{
+    background: #1B8D73;
+    color: #ffff;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    pointer-events: none;
+}
+
+#overlay.active{
+    pointer-events: all;
+    opacity: 1;
+}
