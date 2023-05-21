@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styleMenu.css">
+        <script defer src="opcionesReportes.js"></script>
         <title>Menu Principal</title>
     </head>
     <body>
@@ -34,11 +35,29 @@
             <div class="card"> 
                 <img src="./externalSources/reportes.ico">
                 <div class="contenido">
+                    <button data-modal-target="#modal">REPORTES</button>
+                </div>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <button data-close-button class="close">&times;</button>
+                    <h4>
+                        Seleccione el reporte que desea visualizar:
+                    </h4>
+                </div>
+                <div class="modal-content">
                     <h3>
-                        <a href="#">REPORTES</a>
+                        <a href="#">CLIENTES</a>
+                    </h3>
+                    <h3>
+                        <a href="#">VENTAS</a>
+                    </h3>
+                    <h3>
+                        <a href="#">PRODUCTOS</a>
                     </h3>
                 </div>
             </div>
+            <div id="overlay"></div>
         </div>
     </body>
 </html>
