@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="listaPedidos.css">
+  <title>List of Orders</title>
+</head>
+
+<body>
+  <!-- Navbar Placeholder -->
+  <div class="navBar">
+    <nav>
+        <a href="#" class="logo"> 
+            <h2 class="Nombre">Reciplas</h2>
+        </a>
+        <ul>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Pedidos</a></li>
+            <li><a href="#">Ventas</a></li>
+            <li><a href="#">Reportes</a></li>
+        </ul>
+        <img src="./externalSources/iconprofile.png" class="perfil" onclick="toggleMenu()">
+        <div class="sub-menu" id="subMenu">
+            <div class="items">
+                <div class="user-info">
+                    <img src="./externalSources/profile.png">
+                    <p>Perfil</p>
+                </div>
+                <hr>
+                    <a href="#" class="sub-menu-link">
+                        <img src="./externalSources/setting.png">
+                        <p>Ajustes</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="./externalSources/logout.png">
+                        <p>Cerrar Sesión</p>
+                        <span>></span>
+                    </a>
+                
+            </div>
+        </div>
+    </nav>
+</div>
+
+  <div class="container mt-4">
+    <h2>Pedidos</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID Pedido</th>
+          <th>Total</th>
+          <th>ID Cliente</th>
+          <th>Fecha Solicitado</th>
+          <th>Estado</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>34235</td>
+          <td>$350.000</td>
+          <td>123</td>
+          <td>20/03/2023</td>
+          <td>Cancelado</td>
+          <td>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  opciones
+
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Option 1</a>
+                  <a class="dropdown-item" href="#">Option 2</a>
+                  <a class="dropdown-item" href="#">Option 3</a>
+                </div>
+              </div>
+          </td>
+        </tr>
+        <!-- Add more rows for other orders -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap JS (optional, only required if you need JavaScript functionality) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
