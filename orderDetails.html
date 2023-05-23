@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+  <title>Order Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="orderDetail.css">
+      </head>
+      
+  <link rel="stylesheet" href="nuevoCliente.css">
+</head>
+
+<body>
+    <div class="navBar">
+      <nav>
+        <a href="#" class="logo">
+          <h2 class="Nombre">Reciplas</h2>
+        </a>
+        <ul>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Pedidos</a></li>
+          <li><a href="#">Ventas</a></li>
+          <li><a href="#">Reportes</a></li>
+        </ul>
+        <img src="./externalSources/iconprofile.png" class="perfil" onclick="toggleMenu()">
+        <div class="sub-menu" id="subMenu">
+          <div class="items">
+            <div class="user-info">
+              <img src="./externalSources/profile.png">
+              <p>Perfil</p>
+            </div>
+            <hr>
+            <a href="#" class="sub-menu-link">
+              <img src="./externalSources/setting.png">
+              <p>Ajustes</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="./externalSources/logout.png">
+              <p>Cerrar Sesión</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  
+      <div class="container mt-4">
+        <h1 class="text-center">Order Details</h1>
+      
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <h4>Order Information</h4>
+            <div class="row">
+              <div class="col">
+                <strong>Order ID:</strong>
+                <span>12345</span>
+              </div>
+              <div class="col">
+                <strong>Client ID:</strong>
+                <span>67890</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <strong>Client Name:</strong>
+                <span>John Doe</span>
+              </div>
+              <div class="col">
+                <strong>Price Charged:</strong>
+                <span>$50.00</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <strong>Date Charged:</strong>
+                <span>2023-05-20</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>Products</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Product ID</th>
+                  <th scope="col">Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>002</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>003</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  
+  </html>
