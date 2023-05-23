@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styleMenuAdm.css">
+        <script defer src="opcionesReportes.js"></script>
+        <title>Menu Principal</title>
+    </head>
+    <body>
+        <div class="navBar">
+            <nav>
+                <a href="#" class="logo"> 
+                    <h2 class="Nombre">Reciplas</h2>
+                </a>
+                <img src="./externalSources/iconprofile.png" class="perfil" onclick="toggleMenu()">
+                <div class="sub-menu" id="subMenu">
+                    <div class="items">
+                        <div class="user-info">
+                            <img src="./externalSources/profile.png">
+                            <p>Perfil</p>
+                        </div>
+                        <hr>
+                            <a href="#" class="sub-menu-link">
+                                <img src="./externalSources/setting.png">
+                                <p>Ajustes</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="./externalSources/logout.png">
+                                <p>Cerrar Sesión</p>
+                                <span>></span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu")
+            }
+        </script>
+        <div class="container">
+            <div class="card"> 
+                <img src = "./externalSources/clientes2.png">
+                <div class="contenido">
+                    <h3>
+                        <a href="#">PERSONAL</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="card"> 
+                <img src="./externalSources/materiaPrima.png">
+                <div class="contenido">
+                    <h3>
+                        <a href="#">MATERIA PRIMA</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="card"> 
+                <img src="./externalSources/productos.png">
+                <div class="contenido">
+                    <h3>
+                        <a href="#">PRODUCTOS</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="card"> 
+                <img src="./externalSources/reportes.ico">
+                <div class="contenido">
+                    <button data-modal-target="#modal">REPORTES</button>
+                </div>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <button data-close-button class="close">&times;</button>
+                    <h4>
+                        Seleccione el reporte que desea visualizar:
+                    </h4>
+                </div>
+                <div class="modal-content">
+                    <h3>
+                        <a href="#">CLIENTES</a>
+                    </h3>
+                    <h3>
+                        <a href="#">PROVEEDORES</a>
+                    </h3>
+                    <h3>
+                        <a href="#">VENTAS</a>
+                    </h3>
+                    <h3>
+                        <a href="#">PRODUCTOS</a>
+                    </h3>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+    </body>
+</html>
