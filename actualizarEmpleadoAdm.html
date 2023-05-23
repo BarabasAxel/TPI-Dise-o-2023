@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="nuevoEmpleado.css">
+    </head>
+    <body>
+        <div class="navBar">
+            <nav>
+                <a href="#" class="logo"> 
+                    <h2 class="Nombre">Reciplas</h2>
+                </a>
+                <ul>
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="#">Materia Prima</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Reportes</a></li>
+                </ul>
+                <img src="./externalSources/iconprofile.png" class="perfil" onclick="toggleMenu()">
+                <div class="sub-menu" id="subMenu">
+                    <div class="items">
+                        <div class="user-info">
+                            <img src="./externalSources/profile.png">
+                            <p>Perfil</p>
+                        </div>
+                        <hr>
+                            <a href="#" class="sub-menu-link">
+                                <img src="./externalSources/setting.png">
+                                <p>Ajustes</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="./externalSources/logout.png">
+                                <p>Cerrar Sesión</p>
+                                <span>></span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu")
+            }
+        </script>
+        <div class="formulario">
+            <div class="container">
+                <div class="title">Actualizar Empleado</div>
+                <form action="#">
+                    <div class="detalle-cliente">
+                        <div class="input-box">
+                            <span class="detalle">ID Empleado</span>
+                            <input type="text" placeholder="ID Empleado" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Nombre y Apellido</span>
+                            <input type="text" placeholder="Nombre y Apellido" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Cargo</span>
+                            <input type="text" placeholder="Cargo" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Email</span>
+                            <input type="text" placeholder="email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Teléfono</span>
+                            <input type="tel" placeholder="Telefono" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="detalle">Seleccionar Fecha</span>
+                            <input type="date" placeholder="Seleccionar Fecha" required>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Actualizar Empleado">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
