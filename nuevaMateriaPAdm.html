@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="producto.css">
+        <link rel="stylesheet" href="materiaPrima.css">
     </head>
     <body>
         <div class="navBar">
@@ -34,6 +34,7 @@
                                 <p>Cerrar Sesión</p>
                                 <span>></span>
                             </a>
+                        
                     </div>
                 </div>
             </nav>
@@ -46,26 +47,16 @@
         </script>
         <div class="formulario">
             <div class="container">
-                <div class="title">Actualizar Producto</div>
+                <div class="title">Nueva Materia Prima</div>
                 <div class="subtitle">
-                    <h5>
-                        Editar información de producto
-                    </h5>
+                    <h5>Se le asignará un número de Materia Prima</h5>
                 </div>
                 <form action="#">
                     <div class="row">
                         <div class="detalle-cliente">
                             <div class="input-box">
-                                <span class="detalle">ID Producto</span>
+                                <span class="detalle">ID Materia Prima</span>
                                 <input type="number" placeholder="0000" required>
-                            </div>
-                            <div class="input-box">
-                                <span class="detalle">Nombre de Producto</span>
-                                <input type="text" placeholder="Nombre de Producto" required>
-                            </div>
-                            <div class="input-box">
-                                <span class="detalle">Precio</span>
-                                <input type="number" placeholder="$0.0" required>
                             </div>
                             <div class="input-box">
                                 <span class="detalle">Seleccionar Fecha</span>
@@ -75,37 +66,10 @@
                     </div>
                     <div class="input-box">
                         <span class="detalle">Descripción</span>
-                        <textarea id="descripcion" rows="5" placeholder="Descripción del producto"></textarea>
-                    </div>
-                    <div class="opciones">
-                        <h5>Ingrese la cantidad de la materia prima necesaria</h5>
-                        <div class="mp">
-                            <span class="detalle">PET (Polietileno Teleftalato)</span>
-                            <input type="number" placeholder="0">
-                        </div>
-                        <div class="mp">
-                            <span class="detalle">HDPE (Polietileno de Alta Densidad)</span>
-                            <input type="number" placeholder="0">
-                        </div>
-                        <div class="mp">
-                            <span class="detalle">PVC (Cloruro de Polivinilo)</span>
-                            <input type="number" placeholder="0">
-                        </div>
-                        <div class="mp">
-                            <span class="detalle">LDPE (Polietileno de Baja Densidad)</span>
-                            <input type="number" placeholder="0">
-                        </div>
-                        <div class="mp">
-                            <span class="detalle">PP (Polipropileno)</span>
-                            <input type="number" placeholder="0">
-                        </div>
-                        <div class="mp">
-                            <span class="detalle">PS (Poliestileno)</span>
-                            <input type="number" placeholder="0">
-                        </div>
+                        <textarea id="descripcion" rows="3" placeholder="Ingrese una breve descripción de la materia prima"></textarea>
                     </div>
                     <div class="button">
-                        <input type="submit" value="Actualizar Producto">
+                        <input type="submit" value="Registrar Materia Prima">
                     </div>
                 </form>
             </div>
